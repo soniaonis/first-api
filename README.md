@@ -22,7 +22,7 @@ The following performance criteria define the core functionality of the REST API
 - **Update:** It should be possible to update information in an existing record by sending a PUT or PATCH request to the appropriate endpoint with the updated data.
 
 - **Delete:** The API should provide the ability to delete a record from the database using a DELETE request.
-- 
+  
 All these methods have been verified in Postman.
 
 By following this project, you will gain a better understanding of how to build a RESTful API using Spring Boot and MySQL, including the implementation of CRUD operations. Feel free to use this as a starting point for your projects or to expand your knowledge of API development.

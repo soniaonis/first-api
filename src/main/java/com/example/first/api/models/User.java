@@ -5,30 +5,33 @@ import jakarta.persistence.*;
 @Entity
 @Table(name="users")
 
-public class CUser {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private int id;
+    private long id;
+    @Column(name = "name", nullable = false)
     private String name;
+    @Column(name = "lastname", nullable = false)
     private String lastname;
+    @Column(name = "email", nullable = false)
     private String email;
 
-    public CUser() {
+    public User() {
     }
 
-    public CUser(int id, String name, String lastname, String email) {
+    public User(long id, String name, String lastname, String email) {
         this.id = id;
         this.name = name;
         this.lastname = lastname;
         this.email = email;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
